@@ -9,8 +9,8 @@ led_pin = 12
 time.sleep(5)
 
 GPIO.setmode(GPIO.BOARD)      # use PHYSICAL GPIO Numbering
-GPIO.setup(ledPin, GPIO.OUT)   # set ledPin to OUTPUT mode
-GPIO.setup(buttonPin, GPIO.IN, pull_up_down=GPIO.PUD_UP)    # set buttonPin to PULL UP INPUT mode
+GPIO.setup(led_pin, GPIO.OUT)   # set ledPin to OUTPUT mode
+GPIO.setup(switch_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)    # set buttonPin to PULL UP INPUT mode
 
 def capture_photo():
     # Create a Picamera2 instance
