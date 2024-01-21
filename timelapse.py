@@ -2,6 +2,8 @@ from picamera2 import Picamera2
 import time
 import os
 
+time.sleep(5)
+
 def capture_photo():
     # Create a Picamera2 instance
     camera = Picamera2()
