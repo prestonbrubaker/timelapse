@@ -40,11 +40,11 @@ def capture_photo():
 
         if GPIO.input(switch_pin)==GPIO.LOW: # if button is pressed
             GPIO.output(led_pin_2,GPIO.HIGH)   # turn on led
-            print ('switch closed >>>')     # print information on terminal
+            print ('switch closed! Photo capturing will proceed when ready!')     # print information on terminal
             switch_closed =  True
         else : # if button is relessed
             GPIO.output(led_pin_2,GPIO.LOW) # turn off led 
-            print ('switch open <<<')   
+            print ('switch open! Photo capturing paused!')   
             switch_closed = False
 
         
